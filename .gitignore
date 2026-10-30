@@ -1,0 +1,64 @@
+# ---- IDE и файлы машины ----
+*.iml
+.idea/
+/captures
+.DS_Store
+local.properties
+/local.properties
+
+# ---- Сборка и кэши ----
+.gradle
+.kotlin/
+build/
+.externalNativeBuild
+.cxx
+*.log
+*.dll
+
+# ---- Готовые артефакты (не публикуются) ----
+*.apk
+*.aab
+*.zip
+/dist
+release-out/
+
+# ---- Ключи и подпись приложения ----
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+
+# ---- Секреты и конфиги окружения ----
+.env
+.env.*
+!.env.example
+secrets.properties
+keystore.properties
+google-services.json
+
+# ---- Инструменты AI-агентов и черновики (не публикуются) ----
+.agents/
+.agent/
+scratch/
+
+# ---- Входная папка владельца с исходными MP3 встроенных микрозвуков ----
+# копии уже лежат в app/src/main/res/raw (см. docs/STATE.md, Stage 5).
+/microsounds/
+
+# ---- ОС, временный мусор и отчёты о падениях ----
+Thumbs.db
+desktop.ini
+nul
+*.tmp
+*.bak
+*.orig
+*.hprof
+hs_err_pid*
+*.ap_
+
+# ---- Прочие папки AI-инструментов (дополнение к списку выше) ----
+.claude/
+.cursor/
+.deepseek*/

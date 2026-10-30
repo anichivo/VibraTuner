@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+   Правила резервного копирования и переноса на устройство для Android 12+.
+   Пользовательские данные (база плейлистов и треков, настройки DataStore)
+   копируются как есть. Исключается только то, что восстановится само:
+   кеш манифеста каталога и устаревшие приватные копии скачанных треков.
+   См. https://developer.android.com/about/versions/12/backup-restore#xml-changes
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="file" path="author_manifest.json" />
+        <exclude domain="file" path="downloads/" />
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="file" path="author_manifest.json" />
+        <exclude domain="file" path="downloads/" />
+    </device-transfer>
+</data-extraction-rules>

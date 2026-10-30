@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Значения должны совпадать с палитрой в Color.kt (Background #141413, Accent #D97757). -->
+    <color name="splash_background">#141413</color>
+    <color name="window_background">#141413</color>
+    <!-- Акцент уведомления. Дублирует Accent из Color.kt:
+         системному Notification нужен Android color resource. -->
+    <color name="notification_accent">#D97757</color>
+    <!-- Подложка adaptive-иконки лаунчера: тёмный фон appicon.png.
+         Иконка — растровый ресурс (mipmap-*/ic_launcher_foreground.png),
+         поэтому цвет живёт здесь, а не в Compose-теме. -->
+    <color name="ic_launcher_background">#181816</color>
+</resources>
